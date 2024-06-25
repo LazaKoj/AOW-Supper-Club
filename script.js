@@ -29,5 +29,5 @@ window.addEventListener('scroll', () => {
 });
 
 function updateImage() {
-    mainImage.style.opacity = 1 - window.pageYOffset / 900;
+    mainImage.style.opacity = 1 - window.pageYOffset / 650;
 }
