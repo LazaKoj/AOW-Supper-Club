@@ -188,7 +188,7 @@ body {
         width: 100%;
         margin: 0 auto;
         order: 2;
-        margin-left: 25px;
+        padding-left: 20px;
     }
 
     .venue-text {
