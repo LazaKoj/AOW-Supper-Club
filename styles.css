@@ -25,6 +25,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 60px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-image p {
+    color: #efe8e4;
+    font-family: "Sofia", cursive;
+    font-size: 3em;
+    width: 60%;
+    margin-top: 30px;  
 }
 
 .about-section {
