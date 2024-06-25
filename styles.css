@@ -8,15 +8,26 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background-color: #efe8e4;
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4e1d2; /* sand beige background */
+    background-color: #f3e2d8; /* sand beige background */
     padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -40,10 +51,60 @@ body {
 .nav-item a {
     text-decoration: none;
     color: #333;
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.nav-item a:hover {
+    color: #797979;
+}
+
+.main-image {
+    background-image: url('dinnerSetup11.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px; /* Add margin to avoid overlap with fixed navbar */
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4e1d2;
+    padding: 40px 20px;
+}
+
+.about-image {
+    background-image: url('coctail.jpg'); /* Replace with the actual image path */
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.about-text {
+    text-align: center;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.about-text h2 {
+    font-family: "Sofia", cursive;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    color: #333;
 }
 
 @media (max-width: 768px) {
@@ -99,20 +160,30 @@ body {
     }
 
     .nav-list {
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 60px;
         background-color: #f4e1d2;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
 
     .nav-list.active {
         display: flex;
+        opacity: 1;
+        animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    .nav-list.fade-out {
+        display: flex;
+        opacity: 0;
+        animation: fadeOut 1s ease-in-out forwards;
     }
 
     .nav-item {
@@ -121,5 +192,40 @@ body {
 
     .menu-button {
         display: flex;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .about-image, .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
