@@ -25,6 +25,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 60px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-image p {
+    color: #efe8e4;
+    font-family: "Sofia", cursive;
+    font-size: 3em;
+    width: 60%;
+    margin-top: 30px;  
 }
 
 .about-section {
@@ -88,8 +99,51 @@ body {
     padding-right: 30px;
 }
 
-@media (max-width: 768px) {
+.venue {
+    display: flex;
+    width: 100%;
+    height: 53vh;
+}
 
+.venue-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 20vh);
+    grid-template-rows: repeat(2, 20vh);
+    gap: 10px;
+    width: 50%;
+    padding: 20px;
+    margin-left: 30px;
+    
+}
+
+.venue-box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 20vh;
+}
+
+.venue-box img {
+    width: fit-content;
+}
+
+.venue-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.venue-text p {
+    font-family: "Sofia", cursive;
+    font-size: 2em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
     .about-section {
         flex-direction: column;
         padding: 20px 10px;
@@ -132,6 +186,23 @@ body {
         width: 100%;
         height: 700px;
         background-attachment: scroll;
+    }
+
+    .venue {
+        flex-direction: column;
+    }
+
+    .venue-grid {
+        grid-template-columns: repeat(2, 20vh);
+        grid-template-rows: repeat(2, 20vh);
+        width: 100%;
+        order: 2;
+    }
+
+    .venue-text {
+        width: 100%;
+        padding: 20px;
+        order: 1;
     }
 }
 

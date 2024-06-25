@@ -19,3 +19,15 @@ menuToggle.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+
+/* scroll fade effect */
+
+const mainImage = document.getElementById('main-image'); 
+
+window.addEventListener('scroll', () => {
+    updateImage();
+});
+
+function updateImage() {
+    mainImage.style.opacity = 1 - window.pageYOffset / 900;
+}
