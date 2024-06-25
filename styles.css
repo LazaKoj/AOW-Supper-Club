@@ -198,6 +198,8 @@ body {
         width: 100%;
         margin: 0 auto;
         order: 2;
+        margin-left: 25px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .venue-text {
