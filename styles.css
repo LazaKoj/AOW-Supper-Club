@@ -210,15 +210,6 @@ body {
     .about-text p {
         font-size: 1em;
     }
-    .main-image {
-    background-image: url('dinnerSetup11.jpg');
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 60px;
-    }
 }
 
 @keyframes fadeIn {
