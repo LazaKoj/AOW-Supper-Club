@@ -190,6 +190,7 @@ body {
 
     .venue {
         flex-direction: column;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .venue-grid {
@@ -199,7 +200,6 @@ body {
         margin: 0 auto;
         order: 2;
         margin-left: 25px;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .venue-text {
