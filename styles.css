@@ -210,6 +210,10 @@ body {
     .about-text p {
         font-size: 1em;
     }
+    .main-image {
+        height: 100vh;
+        background-size: cover;
+    }
 }
 
 @keyframes fadeIn {
