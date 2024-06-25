@@ -17,50 +17,6 @@ body {
     font-style: normal;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f3e2d8; /* sand beige background */
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: "Sofia", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: #333;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-
-.nav-item {
-    margin-left: 20px;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1em;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.nav-item a:hover {
-    color: #797979;
-}
-
 .main-image {
     background-image: url('dinnerSetup11.jpg');
     height: 100vh;
@@ -68,7 +24,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 60px; /* Add margin to avoid overlap with fixed navbar */
+    margin-top: 60px; 
 }
 
 .about-section {
@@ -76,11 +32,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #efe8e4;
-    padding: 40px 20px;
+    padding: 20px 40px;
 }
 
 .about-image {
-    background-image: url('coctail.jpg'); 
+    background-image: url('grupa1.jpg'); 
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +45,16 @@ body {
 }
 
 .about-image-2 {
-    background-image: url('grupa1.jpg'); 
+    background-image: url('flirting.jpg'); 
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.about-image-3 {
+    background-image: url('chefprep.jpg'); 
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +65,13 @@ body {
 .about-text {
     text-align: center;
     margin-left: 20px;
+    margin-right: 20px;
     width: 50%;
+    border-bottom: 2px solid #333;
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+    border-top: 2px solid #333;
+    border-radius: 4px;
 }
 
 .about-text h2 {
@@ -118,91 +89,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .menu-button {
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-        border-radius: 4px;
-    }
-    .hamburger-menu {
-        width: 30px;
-        height: 3px;
-        background: #333;
-        border-radius: 5px;
-        transition: all .5s ease-in-out;
-    }
-    .hamburger-menu::before,
-    .hamburger-menu::after {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background: #333;
-        transition: all .5s ease-in-out;
-        border-radius: 4px;
-    }
-
-    .hamburger-menu::before {
-        transform: translateY(-10px);
-    }
-
-    .hamburger-menu::after {
-        transform: translateY(10px);
-    }
-
-    .menu-button.open .hamburger-menu {
-        transform: translateX(-50px);
-        background: transparent;
-        box-shadow: none;
-    } 
-
-    .menu-button.open .hamburger-menu::before {
-        transform: rotate(45deg) translate(35px, -35px);
-    }
-
-    .menu-button.open .hamburger-menu::after {
-        transform: rotate(-45deg) translate(35px, 35px);
-    }
-
-    .nav-list {
-        position: fixed;
-        right: 0;
-        top: 60px;
-        background-color: #f4e1d2;
-        width: 100%;
-        height: 80vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        display: none;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-    }
-
-    .nav-list.active {
-        display: flex;
-        opacity: 1;
-        animation: fadeIn 0.5s ease-in-out forwards;
-    }
-
-    .nav-list.fade-out {
-        display: flex;
-        opacity: 0;
-        animation: fadeOut 1s ease-in-out forwards;
-    }
-
-    .nav-item {
-        margin: 20px 0;
-    }
-
-    .menu-button {
-        display: flex;
-    }
 
     .about-section {
         flex-direction: column;
@@ -212,6 +98,12 @@ body {
     .about-text {
         width: 80%;
         padding-bottom: 30px;
+        border-bottom: 2px solid #333;
+        border-left: 2px solid #333;
+        border-right: 2px solid #333;
+        border-top: 2px solid #333;
+        border-radius: 4px;
+        margin-bottom: 20px;
     }
 
     .about-image {
@@ -225,8 +117,15 @@ body {
         order: 1;
     }
 
+    .about-image-3 {
+        width: 100%;
+        height: 300px;
+        order: 1;
+    }
+
     .about-text p {
         font-size: 1em;
+        margin-left: 25px;
     }
 
     .main-image {
