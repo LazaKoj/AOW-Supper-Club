@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+/* General styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #efe8e4;
     text-decoration: none;
@@ -16,6 +18,8 @@ body {
     font-style: normal;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+/* Main image section */
 .main-image {
     background-image: url('dinnerSetup11.jpg');
     height: 100vh;
@@ -23,18 +27,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 60px; 
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     text-align: center;
 }
+
 .main-image p {
     color: #efe8e4;
     font-family: "Alice", serif;
     font-size: 3em;
     width: 60%;
-    margin-top: 30px;  
+    margin-top: 30px;
 }
+
+/* About section */
 .about-section {
     display: flex;
     align-items: center;
@@ -42,53 +49,55 @@ body {
     background-color: #efe8e4;
     padding: 20px 40px;
 }
+
+.about-image, .about-image-2, .about-image-3 {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
 .about-image {
-    background-image: url('grupa1.jpg'); 
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
+    background-image: url('grupa1.jpg');
 }
+
 .about-image-2 {
-    background-image: url('flirting.jpg'); 
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
+    background-image: url('flirting.jpg');
 }
+
 .about-image-3 {
-    background-image: url('chefprep.jpg'); 
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
+    background-image: url('chefprep.jpg');
 }
+
 .about-text {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
     width: 50%;
 }
+
 .about-text h2 {
     font-family: "Alice", serif;
     font-size: 2em;
     color: #333;
     margin-bottom: 10px;
 }
+
 .about-text p {
     font-family: "Poppins", sans-serif;
     font-size: 1em;
     color: #333;
     padding-right: 30px;
 }
+
+/* Venue section */
 .venue {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .venue-grid {
     display: grid;
     justify-content: center;
@@ -97,6 +106,7 @@ body {
     gap: 10px;
     padding: 20px;
 }
+
 .venue-box {
     background-size: cover;
     background-position: center;
@@ -104,75 +114,136 @@ body {
     height: 20vh;
     width: 20vh;
 }
+
 .venue-box img {
     width: fit-content;
 }
+
 .venue-text {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
+
 .venue-text p {
     font-family: "Alice", serif;
     font-size: 2em;
     color: #333;
 }
+
+/* Footer section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}
+
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;
         padding: 20px 10px;
     }
+
     .about-text {
         width: 80%;
         padding-bottom: 30px;
         margin-bottom: 20px;
     }
-    .about-image {
+
+    .about-image, .about-image-2, .about-image-3 {
         width: 100%;
         height: 300px;
     }
-    .about-image-2 {
-        width: 100%;
-        height: 300px;
-        order: 1;
-    }
-    .about-image-3 {
-        width: 100%;
-        height: 300px;
-        order: 1;
-    }
+
     .about-text p {
         font-size: 1em;
         margin-left: 25px;
     }
+
     .main-image {
         width: 100%;
         height: 700px;
         background-attachment: scroll;
     }
+
     .venue {
         flex-direction: column;
     }
+
     .venue-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: auto;
-        order: 2;
     }
+
     .venue-text {
         width: 100%;
         padding: 20px;
-        margin: 0 auto; 
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        order: 1;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer-bottom {
+        padding: 10px 20px;
     }
 }
+
+/* Animation keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -181,6 +252,7 @@ body {
         opacity: 1;
     }
 }
+
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -189,3 +261,4 @@ body {
         opacity: 0;
     }
 }
+
