@@ -236,7 +236,6 @@ body {
         grid-template-columns: repeat(2, 20vh);
         grid-template-rows: repeat(2, 20vh);
         width: 100%;
-        padding-left: 20px;
         order: 2;
     }
 
