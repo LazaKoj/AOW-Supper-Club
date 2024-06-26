@@ -47,7 +47,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #efe8e4;
-    padding: 20px 40px;
+    padding: 20px 40px;   
 }
 
 .about-image, .about-image-2, .about-image-3 {
@@ -56,6 +56,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
+    animation: fadeIin ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
 .about-image {
@@ -75,6 +78,9 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     width: 50%;
+    animation: fadeIin ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
 .about-text h2 {
@@ -105,6 +111,9 @@ body {
     grid-template-rows: repeat(2, 20vh);
     gap: 10px;
     padding: 20px;
+    animation: fadeIin ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
 .venue-box {
@@ -126,6 +135,9 @@ body {
     width: 50%;
     text-align: center;
     margin: 0 auto;
+    animation: fadeIin ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
 .venue-text p {
@@ -139,6 +151,9 @@ body {
     background-color: #efe8e4;
     color: #333;
     padding: 20px 0;
+    animation: fadeIin ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 10%;
 }
 
 .footer-content {
@@ -274,3 +289,15 @@ body {
         opacity: 0;
     }
 }
+
+@keyframes fadeIin {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
