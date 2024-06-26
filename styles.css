@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
+    width: 100%;
     background-color: #efe8e4;
     text-decoration: none;
     color: #333;
@@ -16,9 +12,12 @@ body {
     font-weight: 400;
     font-style: normal;
     overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
 }
 
 .main-image {
+    width: 100%;
     background-image: url('dinnerSetup11.jpg');
     height: 100vh;
     background-attachment: fixed;
@@ -40,6 +39,7 @@ body {
 }
 
 .about-section {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +92,6 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1em;
     color: #333;
-    padding-right: 30px;
 }
 
 .venue {
@@ -150,7 +149,6 @@ body {
 .footer-content {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
@@ -195,7 +193,7 @@ body {
     }
 
     .about-text {
-        width: 80%;
+        width: 100%;
         padding-bottom: 30px;
         margin-bottom: 20px;
     }
@@ -302,20 +300,4 @@ body {
     }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
