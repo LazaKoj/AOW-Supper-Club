@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    width: 100%;
     background-color: #efe8e4;
     text-decoration: none;
     color: #333;
@@ -11,13 +14,9 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    overflow-x: hidden; 
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-
 .main-image {
-    width: 100%;
     background-image: url('dinnerSetup11.jpg');
     height: 100vh;
     background-attachment: fixed;
@@ -29,7 +28,6 @@ body {
     justify-content: center;
     text-align: center;
 }
-
 .main-image p {
     color: #efe8e4;
     font-family: "Alice", serif;
@@ -37,16 +35,13 @@ body {
     width: 60%;
     margin-top: 30px;  
 }
-
 .about-section {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #efe8e4;
     padding: 20px 40px;
 }
-
 .about-image {
     background-image: url('grupa1.jpg'); 
     height: 400px;
@@ -55,7 +50,6 @@ body {
     background-size: cover;
     width: 50%;
 }
-
 .about-image-2 {
     background-image: url('flirting.jpg'); 
     height: 400px;
@@ -64,7 +58,6 @@ body {
     background-size: cover;
     width: 50%;
 }
-
 .about-image-3 {
     background-image: url('chefprep.jpg'); 
     height: 400px;
@@ -73,44 +66,37 @@ body {
     background-size: cover;
     width: 50%;
 }
-
 .about-text {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
     width: 50%;
 }
-
 .about-text h2 {
     font-family: "Alice", serif;
     font-size: 2em;
     color: #333;
     margin-bottom: 10px;
 }
-
 .about-text p {
     font-family: "Poppins", sans-serif;
     font-size: 1em;
     color: #333;
+    padding-right: 30px;
 }
-
 .venue {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 53vh;
 }
-
 .venue-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 20vh);
     grid-template-rows: repeat(2, 20vh);
     gap: 10px;
-    width: 50%;
     padding: 20px;
-    margin: 0 auto;
-    margin-left: 30px; 
 }
-
 .venue-box {
     background-size: cover;
     background-position: center;
@@ -118,11 +104,9 @@ body {
     height: 20vh;
     width: 20vh;
 }
-
 .venue-box img {
     width: fit-content;
 }
-
 .venue-text {
     display: flex;
     align-items: center;
@@ -131,112 +115,53 @@ body {
     text-align: center;
     margin: 0 auto; 
 }
-
 .venue-text p {
     font-family: "Alice", serif;
     font-size: 2em;
     color: #333;
 }
-
-.footer {
-    background-color: #efe8e4;
-    color: #333;
-    padding: 20px 0;
-    text-align: center;
-    font-family: "Alice", serif;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.footer-section {
-    flex: 1;
-    padding: 10px;
-    min-width: 200px;
-}
-
-.footer-section h3 {
-    margin-bottom: 15px;
-}
-
-.footer-section p,
-.footer-section ul,
-.footer-section li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    line-height: 1.6;
-    font-family: "Alice", serif;
-}
-
-.footer-section a {
-    color: #333;
-    text-decoration: none;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    border-top: 1px solid #333;
-    padding: 10px;
-}
-
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;
         padding: 20px 10px;
     }
-
     .about-text {
-        width: 100%;
+        width: 80%;
         padding-bottom: 30px;
         margin-bottom: 20px;
     }
-
     .about-image {
         width: 100%;
         height: 300px;
     }
-
     .about-image-2 {
         width: 100%;
         height: 300px;
         order: 1;
     }
-
     .about-image-3 {
         width: 100%;
         height: 300px;
         order: 1;
     }
-
     .about-text p {
         font-size: 1em;
         margin-left: 25px;
     }
-
     .main-image {
         width: 100%;
         height: 700px;
         background-attachment: scroll;
     }
-
     .venue {
         flex-direction: column;
     }
-
     .venue-grid {
-        grid-template-columns: repeat(2, 20vh);
-        grid-template-rows: repeat(2, 20vh);
-        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: auto;
         order: 2;
     }
-
     .venue-text {
         width: 100%;
         padding: 20px;
@@ -245,43 +170,9 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
-    }
-
-    .footer {
-        overflow-x: hidden;
-        margin-top: 50vh;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
-    }
-
-    .footer-section:last-child {
-        margin-bottom: 0;
-    }
-    
-    .footer-section h3 {
-        font-size: 1.3em;
-    }
-
-    .footer-section p,
-    .footer-section ul,
-    .footer-section li {
-        font-size: 1em;
-        
-    }
-
-    .footer-bottom {
-        padding: 5px;
-        font-size: 0.8em;
+        order: 1;
     }
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -290,7 +181,6 @@ body {
         opacity: 1;
     }
 }
-
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -299,5 +189,3 @@ body {
         opacity: 0;
     }
 }
-
-
