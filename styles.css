@@ -139,39 +139,8 @@ body {
     color: #333;
 }
 
-.testimonial {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-}
-.testimonial p {
-    font-size: 1.2em;
-    margin: 0 60px; 
-}
-.testimonial h3 {
-    margin-top: 15px;
-}
-.nav-buttons {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    pointer-events: none;
-}
-.nav-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    pointer-events: all;
-}
-
 .footer {
-    background-color: #d17845;
+    background-color: #efe8e4;
     color: #333;
     padding: 20px 0;
     text-align: center;
