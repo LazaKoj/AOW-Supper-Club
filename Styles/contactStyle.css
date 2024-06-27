@@ -28,7 +28,7 @@ main {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background-image: url(walll.jpg);
+    background-image: url('../images/walll.jpg');
     animation: fadeIn 2s forwards;
     margin-top: 80px;
 }

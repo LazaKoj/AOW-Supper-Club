@@ -21,7 +21,7 @@ body {
 
 /* Main image section */
 .main-image {
-    background-image: url('dinnerSetup11.jpg');
+    background-image: url('../images/dinnerSetup11.jpg');
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -63,15 +63,15 @@ body {
 }
 
 .about-image {
-    background-image: url('grupa1.jpg');
+    background-image: url('../images/grupa1.jpg');
 }
 
 .about-image-2 {
-    background-image: url('flirting.jpg');
+    background-image: url('../images/flirting.jpg');
 }
 
 .about-image-3 {
-    background-image: url('chefprep.jpg');
+    background-image: url('../images/chefprep.jpg');
 }
 
 .about-text {
