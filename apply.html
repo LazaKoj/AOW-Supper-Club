@@ -1,0 +1,87 @@
+<!-- File: apply.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="applyStyle.css">
+    <link rel="stylesheet" href="header.css">
+    <title>Application Form</title>
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AOW Supper Club</div>
+        <div class="menu-button">
+            <div class="hamburger-menu"></div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="#">Apply</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload your Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+            <div class="form-group">
+                <label for="persona">Please choose the persona that best describes you:</label>
+                <select id="persona" name="persona" required>
+                    <option value="intellect">Intellect</option>
+                    <option value="creative">Creative</option>
+                    <option value="leader">Leader</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="single">Are you single?</label>
+                <select id="single" name="single" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="topics">List three topics you enjoy discussing or want to learn more about:</label>
+                <input type="text" id="topics" name="topics" required>
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn/Personal Website:</label>
+                <input type="url" id="linkedin" name="linkedin">
+            </div>
+            <div class="form-group">
+                <label for="proud">Tell me about something that you are proud of:</label>
+                <textarea id="proud" name="proud" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="gain">What are you hoping to gain from AOW?</label>
+                <textarea id="gain" name="gain" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="footerApply">&copy; 2024 AOW Supper Club | All Rights Reserved</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
