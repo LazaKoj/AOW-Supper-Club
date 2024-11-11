@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,600&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
 /* General styles */
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
@@ -40,6 +42,13 @@ body {
     width: 60%;
     margin-top: 30px;
     animation: fadeInn 2s forwards;
+}
+
+.main-image span {
+    font-family: "Tangerine", cursive;
+    font-weight: 600;
+    font-style: normal; 
+    font-size: 2em;
 }
 
 /* About section */
@@ -235,6 +244,20 @@ body {
         background-attachment: scroll;
     }
 
+    .main-image p {
+        width: 80%; 
+        margin: 0 auto;
+        margin-top: 20px; 
+        text-align: center; 
+    }
+
+    .main-image span {
+        display: inline-block;
+        text-align: center;
+        width: 100%; 
+        font-size: 1.8em; 
+    }
+
     .venue {
         flex-direction: column;
     }
@@ -243,6 +266,13 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: auto;
+    }
+
+    .venue-box {
+        background-position: center center; 
+        background-size: cover; /* Ensure it covers the entire area without distortion */
+        width: 100%; /* Adjust width for responsiveness */
+        height: 20vh; /* Adjust height as needed */
     }
 
     .venue-text {
@@ -312,4 +342,3 @@ body {
         transform: translateY(0) scale(1);
     }
 }
-
